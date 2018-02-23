@@ -3,4 +3,4 @@ jdk:
   - oraclejdk8
 
 script: ant build
-install: ant deps
+install: ant
