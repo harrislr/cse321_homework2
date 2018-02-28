@@ -1,5 +1,5 @@
-import static org.junit.Assert.*;
 
+import static org.junit.Assert.*;
 import org.junit.Test;
 
 
@@ -9,17 +9,14 @@ public class CalcTest {
 	public void intTest() {
 		assertEquals(Calc.divide(4,2), 2);
 	}
-	
 	@Test
 	public void notFloatTest() {
 		assertNotEquals(Calc.divide(4, 2), 2.0);
 	}
-	
 	@Test(expected = Exception.class)
 	public void divideByZeroTest() {
 		Calc.divide(1, 0);
 	}
-	
 	@Test
 	public void roundDownTest() {
 		assertEquals(Calc.divide(5, 2), 2);
